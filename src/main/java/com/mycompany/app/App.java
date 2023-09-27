@@ -5,12 +5,13 @@ package com.mycompany.app;
  */
 public class App {
 
-    private static String MESSAGE = "Hello World!";
+    private String MESSAGE = "Hello World!";
 
     public App() {}
 
     public static void main(String[] args) {
-        System.out.println(MESSAGE);
+        App app = new App();
+        System.out.println(app.getMessage());
     }
 
     public String getMessage() {
