@@ -16,4 +16,8 @@ public class App {
     public String getMessage() {
         return MESSAGE;
     }
+
+    public void setMessage(String message) {
+        MESSAGE = message;
+    }
 }
