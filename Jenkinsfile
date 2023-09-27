@@ -13,5 +13,9 @@ node {
                 junit 'target/surefire-reports/*.xml'
             }
         }
+
+        stage('Deploy') {
+            sh './jenkins/scripts/deliver.sh'
+        }
     }
 }
